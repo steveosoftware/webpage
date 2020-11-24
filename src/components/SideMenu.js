@@ -7,6 +7,7 @@ import { Button, Icon, SideNav, SideNavItem } from 'react-materialize';
 
 
 
+
 const SideMenu = () => {
 
 return (
@@ -30,7 +31,7 @@ return (
     <SideNavItem
 
       user={{
-        background: 'https://placeimg.com/640/480/tech',
+        background: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.industryweek.com%2Ftechnology-and-iiot%2Femerging-technologies%2Farticle%2F21972483%2Fpreparing-for-the-factory-of-the-future&psig=AOvVaw0dQeXj6Fpb-xwo1Nzauv8L&ust=1606336857551000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOCuiaGFnO0CFQAAAAAdAAAAABAO',
         email: 'mrsteveoconnor@gmail.com',
         image: './images/headshot.jpg',
         name: "Steve O'Connor"
