@@ -2,13 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import SideMenu from './SideMenu';
 import About from './About';
-import Background from './Background'
+import Projects from './Projects'
 import Home from './Home';
 
 
 const App = () => {
   return (
-    <div  style={{ display: 'inline'}}>
+    <div  style={{ position: 'relative' }}>
       <SideMenu />
 
      <div>
@@ -19,6 +19,9 @@ const App = () => {
             </Route>
             <Route exact path="/">
               <Home />
+            </Route>
+            <Route exact path="/projects">
+              <Projects />
             </Route>
          </Switch>
        </Router>

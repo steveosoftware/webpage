@@ -11,27 +11,22 @@ import { Button, Icon, SideNav, SideNavItem } from 'react-materialize';
 const SideMenu = () => {
 
 return (
-<div>
-  <style>
-    {`
-            #root > div > div {
-              z-index: 99999 !important;
-            }
-          `}
-  </style>
+<div style={{ position: 'absolute', zIndex: 1000, top: 0, left: 5 }}>
+
   <SideNav
+
     id="SideNav-10"
     options={{
       draggable: true
     }}
 
-    trigger={<Button className=".left-align" icon={<Icon>menu</Icon>}node="button"></Button>}>
+    trigger={<Button className=".left-align grey darken-2" icon={<Icon>menu</Icon>}node="button"></Button>}>
 
 
     <SideNavItem
 
       user={{
-        background: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.industryweek.com%2Ftechnology-and-iiot%2Femerging-technologies%2Farticle%2F21972483%2Fpreparing-for-the-factory-of-the-future&psig=AOvVaw0dQeXj6Fpb-xwo1Nzauv8L&ust=1606336857551000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOCuiaGFnO0CFQAAAAAdAAAAABAO',
+        background: 'https://images.unsplash.com/photo-1592185161765-2ea880a392b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1716&q=80',
         email: 'mrsteveoconnor@gmail.com',
         image: './images/headshot.jpg',
         name: "Steve O'Connor"
