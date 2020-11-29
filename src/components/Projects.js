@@ -1,21 +1,28 @@
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 import 'materialize-css';
-import { Card, Row, Col, Icon, CardTitle } from 'react-materialize';
+import { Card, Icon, CardTitle } from 'react-materialize';
 
 
 const list = [{
   title: 'Surveys-R-Us',
-  image: 'https://sharpencx.com/wp-content/uploads/2019/02/22_7-Ways-to-Encourage-Customers_0219-01-3.png',
-  body: 'Customer satisfaction survey using React/Redux/GoogleOAuth2.0/Stripe/Mongo/Express.  User can email customers and get feedback on a product or service.',
+  image: 'https://inboxtranslation.com/wp-content/uploads/2020/09/challenges-translation-surveys.jpg',
+  body: 'Customer satisfaction survey using React, Redux, GoogleOAuth2.0, Stripe, Mongo, and Express.  Sendgrid acts as 3rd party mass mailer.  User can email customers and get feedback on a product or service.  Deployed on Heroku.',
   link: 'https://infinite-journey-44904.herokuapp.com/surveys'
+
 },
 {
   title: 'YelpCamp',
   image: 'https://thedyrt.imgix.net/photo/86958/media/california-holcomb-valley_db4d4fff23dc77f9a5cd745e817f993b.png?ixlib=rb-3.1.1',
-  body: 'This project was made with EJS/Express/Mongo/Passport.  Works like Yelp for campsites.  Upload images, leave reviews, make comments.',
+  body: 'This project was made with EJS, Express, MongoDB, and Passport.  Works like Yelp for campsites.  Upload images, leave reviews, make comments.  Deployed on Heroku.',
   link: 'https://agile-ocean-66764.herokuapp.com/'
 },
+{
+  title: 'yt-app',
+  image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlu0e5qToFGb4kMm4jxbj8tWBbeMQ41UKc4g&usqp=CAU',
+  body: 'Incorporating YouTube API, users can integrate the code for this app to stream content directly onto their websites.',
+  link: 'https://github.com/stinkypiece/yt-app'
+}
 ]
 
 
@@ -23,18 +30,19 @@ const list = [{
 
 const Projects = () => {
 
-  const renderedCards = (listItem) => {
+  const renderedCards = (listItem) => (
+    <a key={listItem?.link} href={listItem?.link}>
         <Card
-          actions={[
-            <a key={listItem?.link} href={listItem?.link}>Link</a>
-          ]}
+          className="card medium"
           closeIcon={<Icon>close</Icon>}
-          header={<CardTitle image={listItem?.image}>${listItem?.title}</CardTitle>}
+          header={<CardTitle image={listItem?.image}>{listItem?.title}</CardTitle>}
           revealIcon={<Icon>more_vert</Icon>}
         >
-          {listItem?.body}
+
+          <span style={{ color: 'black' }}>{listItem?.body}</span>
         </Card>
-      }
+        </a>
+      )
 
 return (
   <Fade duration={2000}>
@@ -48,9 +56,7 @@ return (
 
     <div style={{ marginTop: '50px'}}>
       <div className="row">
-        {list.map(listItem => {
-          <div className="col m4">{renderedCards(listItem)}</div>
-        })}
+        {list.map(listItem => <div className="col m4">{renderedCards(listItem)}</div>)}
       </div>
     </div>
 
