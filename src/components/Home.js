@@ -1,11 +1,18 @@
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { Image } from 'react-image-and-background-image-fade';
+import Typography from '@material-ui/core/Typography'
+import 'fontsource-roboto';
+import { createMuiTheme, responsiveFontSizes, MuiThemeProvider } from '@material-ui/core/styles'
 
+let theme = createMuiTheme();
+    theme = responsiveFontSizes(theme);
 
+    const text = "I LIKE TO BUILD THINGS"
 
 
 const Home = () => {
+
 
 
   return (
@@ -26,13 +33,19 @@ const Home = () => {
       />
 
 
+    <MuiThemeProvider theme={theme}>
 
     <div className="container" style={{ align: 'center', position: 'absolute',left: '20%', top: '30%'}}>
       <Fade duration={7000}>
-        <h1 style={{ color: 'white', fontSize: '130px', textAlign: 'center' }}>I LIKE TO BUILD THINGS</h1>
+        <Typography
+           style={{ color: 'white' }}
+          variant="h1"
+          gutterbottom>
+          {text}
+        </Typography>
       </Fade>
     </div>
-
+    </MuiThemeProvider>
   </div>
   )
 }
