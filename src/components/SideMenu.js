@@ -39,7 +39,7 @@ return (
       Home
     </SideNavItem>
     <SideNavItem
-      href="https://github.com/stinkypiece"
+      href="https://github.com/steveosoftware"
       icon={<Icon>collections</Icon>}
       className="hoverable"
     >
