@@ -54,16 +54,15 @@ return (
       </div>
     </nav>
 
-    <div style={{ marginTop: '50px', marginBottom: '20%'}}>
+    <div style={{ marginTop: '100px', marginBottom: '240px'}}>
       <div className="row">
         {list.map(listItem => <div className="col m4">{renderedCards(listItem)}</div>)}
       </div>
     </div>
 
 
-  <div >
-    <Footer />
-  </div>
+  <Footer/>
+
   </Fade>
   )
 }

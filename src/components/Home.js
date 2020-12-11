@@ -28,17 +28,17 @@ const Home = () => {
       height="1200px"
       alt="background"
 
-      style={{ zIndex:'1', opacity: '.9', backgroudSize: 'cover', display: 'inline' }}
+      style={{ zIndex:'1', opacity: '.9', backgroudSize: 'cover', backgroundAttachment: "fixed", display: 'inline' }}
 
       />
 
 
     <MuiThemeProvider theme={theme}>
 
-    <div className="container" style={{ align: 'center', position: 'absolute',left: '20%', top: '30%'}}>
+    <div className="container" style={{ align: 'center', position: 'absolute', left: '20%', top: '30%'}}>
       <Fade duration={7000}>
         <Typography
-           style={{ color: 'white' }}
+           style={{ color: 'white', position:"sticky"}}
           variant="h1"
           gutterbottom>
           {text}
