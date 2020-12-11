@@ -2,7 +2,7 @@ import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 import 'materialize-css';
 import { Card, Icon, CardTitle } from 'react-materialize';
-
+import Footer from './Footer';
 
 const list = [{
   title: 'Surveys-R-Us',
@@ -54,12 +54,16 @@ return (
       </div>
     </nav>
 
-    <div style={{ marginTop: '50px'}}>
+    <div style={{ marginTop: '50px', marginBottom: '20%'}}>
       <div className="row">
         {list.map(listItem => <div className="col m4">{renderedCards(listItem)}</div>)}
       </div>
     </div>
 
+
+  <div >
+    <Footer />
+  </div>
   </Fade>
   )
 }
