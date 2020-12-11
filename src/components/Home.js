@@ -19,6 +19,7 @@ const Home = () => {
 
 
   <div>
+    <div style={{ background: "cover", position: "fixed"}}>
 
   <Image
 
@@ -28,14 +29,14 @@ const Home = () => {
       height="1200px"
       alt="background"
 
-      style={{ zIndex:'1', opacity: '.9', backgroudSize: 'cover', backgroundAttachment: "fixed", display: 'inline' }}
+      style={{ zIndex:'1', opacity: '.9', background: "cover", display: 'inline' }}
 
       />
-
+  </div>
 
     <MuiThemeProvider theme={theme}>
 
-    <div className="container" style={{ align: 'center', position: 'absolute', left: '20%', top: '30%'}}>
+    <div className="container" style={{ align: 'center', position: 'absolute', left: '20%', marginTop: "20%"}}>
       <Fade duration={7000}>
         <Typography
            style={{ color: 'white', position:"sticky"}}
