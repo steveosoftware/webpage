@@ -1,16 +1,11 @@
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 import 'materialize-css';
-import { Card, Icon, CardTitle } from 'react-materialize';
+import { Card, Icon, CardTitle, Row, Col } from 'react-materialize';
 import Footer from './Footer';
 
-const list = [{
-  title: 'Surveys-R-Us',
-  image: 'https://inboxtranslation.com/wp-content/uploads/2020/09/challenges-translation-surveys.jpg',
-  body: 'Customer satisfaction survey using React, Redux, GoogleOAuth2.0, Stripe, Mongo, and Express.  Sendgrid acts as 3rd party mass mailer.  User can email customers and get feedback on a product or service.  Deployed on Heroku.',
-  link: 'https://infinite-journey-44904.herokuapp.com/surveys'
 
-},
+const list = [
 {
   title: 'YelpCamp',
   image: 'https://thedyrt.imgix.net/photo/86958/media/california-holcomb-valley_db4d4fff23dc77f9a5cd745e817f993b.png?ixlib=rb-3.1.1',
@@ -18,11 +13,26 @@ const list = [{
   link: 'https://agile-ocean-66764.herokuapp.com/'
 },
 {
+  title: 'JS JungleGym',
+  image: 'https://www.pbs.org/wgbh/nova/media/images/bfcppfu.width-800.png',
+  body: 'An npm package serving as an interactive coding environment. You can write Javascript, see it executed, and write comprehensive documentation using markdown.',
+  link: 'https://www.npmjs.com/package/jsjunglegym'
+
+},
+{
+  title: 'Surveys-R-Us',
+  image: 'https://inboxtranslation.com/wp-content/uploads/2020/09/challenges-translation-surveys.jpg',
+  body: 'Customer satisfaction survey using React, Redux, GoogleOAuth2.0, Stripe, Mongo, and Express.  Sendgrid acts as 3rd party mass mailer.  User can email customers and get feedback on a product or service.  Deployed on Heroku.',
+  link: 'https://infinite-journey-44904.herokuapp.com/surveys'
+
+},
+{
   title: 'yt-app',
   image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlu0e5qToFGb4kMm4jxbj8tWBbeMQ41UKc4g&usqp=CAU',
   body: 'Incorporating YouTube API, users can integrate the code for this app to stream content directly onto their websites.',
   link: 'https://mysterious-forest-74819.herokuapp.com/'
 }
+
 ]
 
 
@@ -31,17 +41,24 @@ const list = [{
 const Projects = () => {
 
   const renderedCards = (listItem) => (
-    <a key={listItem?.link} href={listItem?.link}>
+
+     <div>
+     <Col m={3} s={12}>
+     <a key={listItem?.link} href={listItem?.link}>
         <Card
-          className="card medium"
+          className="card large"
           closeIcon={<Icon>close</Icon>}
           header={<CardTitle image={listItem?.image}>{listItem?.title}</CardTitle>}
           revealIcon={<Icon>more_vert</Icon>}
         >
 
           <span style={{ color: 'black' }}>{listItem?.body}</span>
+
         </Card>
         </a>
+        </Col>
+        </div>
+
       )
 
 return (
@@ -55,9 +72,11 @@ return (
     </nav>
 
     <div style={{ marginTop: '100px', marginBottom: '240px'}}>
-      <div className="row">
-        {list.map(listItem => <div className="col m4">{renderedCards(listItem)}</div>)}
-      </div>
+      <Row>
+        <div>
+          {list.map(listItem => <div>{renderedCards(listItem)}</div>)}
+        </div>
+      </Row>
     </div>
 
 

@@ -3,7 +3,7 @@ import 'materialize-css';
 
 const Footer = () => {
   return (
-    <footer class="page-footer black" style={{ position: 'absolute', width:"100%"}}>
+    <footer class="page-footer black" style={{ position: 'absolute', height:'400px', width:"100%"}}>
 
             <div class="container">
             <p class="white-text center">mrsteveoconnor@gmail.com</p>
