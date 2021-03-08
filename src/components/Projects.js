@@ -23,7 +23,7 @@ const list = [
   title: 'Surveys-R-Us',
   image: 'https://inboxtranslation.com/wp-content/uploads/2020/09/challenges-translation-surveys.jpg',
   body: 'Customer satisfaction survey using React, Redux, GoogleOAuth2.0, Stripe, Mongo, and Express.  Sendgrid acts as 3rd party mass mailer.  User can email customers and get feedback on a product or service.  Deployed on Heroku, so please allow for server loading time.',
-  link: 'https://infinite-journey-44904.herokuapp.com/surveys'
+  link: 'https://infinite-journey-44904.herokuapp.com/'
 
 },
 {
