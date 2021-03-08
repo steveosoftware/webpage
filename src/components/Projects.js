@@ -9,7 +9,7 @@ const list = [
 {
   title: 'YelpCamp',
   image: 'https://thedyrt.imgix.net/photo/86958/media/california-holcomb-valley_db4d4fff23dc77f9a5cd745e817f993b.png?ixlib=rb-3.1.1',
-  body: 'This project was made with EJS, Express, MongoDB, and Passport.  Works like Yelp for campsites.  Upload images, leave reviews, make comments.  Deployed on Heroku.',
+  body: 'This project was made with EJS, Express, MongoDB, and Passport.  Works like Yelp for campsites.  Upload images, leave reviews, make comments.  Deployed on Heroku, so please allow 10 to 20 seconds for their servers to load.',
   link: 'https://agile-ocean-66764.herokuapp.com/'
 },
 {
@@ -22,9 +22,15 @@ const list = [
 {
   title: 'Surveys-R-Us',
   image: 'https://inboxtranslation.com/wp-content/uploads/2020/09/challenges-translation-surveys.jpg',
-  body: 'Customer satisfaction survey using React, Redux, GoogleOAuth2.0, Stripe, Mongo, and Express.  Sendgrid acts as 3rd party mass mailer.  User can email customers and get feedback on a product or service.  Deployed on Heroku.',
+  body: 'Customer satisfaction survey using React, Redux, GoogleOAuth2.0, Stripe, Mongo, and Express.  Sendgrid acts as 3rd party mass mailer.  User can email customers and get feedback on a product or service.  Deployed on Heroku, so please allow for server loading time.',
   link: 'https://infinite-journey-44904.herokuapp.com/surveys'
 
+},
+{
+  title: 'Natours',
+  image: 'https://images.unsplash.com/photo-1600417601126-9654823201c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80',
+  body: 'A demonstration of advanced CSS and Sass, complete with media queries to scale to tablets and phones.  Deployed on AWS.',
+  link: 'https://main.d2mv1budolvxgk.amplifyapp.com/'
 },
 {
   title: 'yt-app',
@@ -43,7 +49,7 @@ const Projects = () => {
   const renderedCards = (listItem) => (
 
      <div>
-     <Col m={3} s={12}>
+     <Col m={4} s={12}>
      <a key={listItem?.link} href={listItem?.link}>
         <Card
           className="card large"
