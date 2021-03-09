@@ -35,7 +35,7 @@ const list = [
 {
   title: 'yt-app',
   image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlu0e5qToFGb4kMm4jxbj8tWBbeMQ41UKc4g&usqp=CAU',
-  body: 'Incorporating YouTube API, users can integrate the code for this app to stream content directly onto their websites.',
+  body: 'Incorporating YouTube API, users can integrate the code for this app to stream content directly onto their websites.  Deployed on Heroku.',
   link: 'https://mysterious-forest-74819.herokuapp.com/'
 }
 
