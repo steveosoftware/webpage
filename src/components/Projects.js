@@ -37,6 +37,12 @@ const list = [
   image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlu0e5qToFGb4kMm4jxbj8tWBbeMQ41UKc4g&usqp=CAU',
   body: 'Incorporating YouTube API, users can integrate the code for this app to stream content directly onto their websites.  Deployed on Heroku.',
   link: 'https://mysterious-forest-74819.herokuapp.com/'
+},
+{
+  title: 'Trillio',
+  image: 'https://images.unsplash.com/photo-1569369926169-9ee7fb80adeb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1644&q=80',
+  body: 'A travel site webpage demo.  Showing off some flexbox which makes media queries a breeze.  Deployed on AWS.',
+  link: 'https://main.d3s2e9w8pmuhzl.amplifyapp.com/'
 }
 
 ]
